@@ -25,6 +25,8 @@ class AtendimentoDto
         public ?SenhaDto $senha = null,
         public ?ServicoDto $servico = null,
         public ?UnidadeDto $unidade = null,
+        public ?LocalDto $local = null,
+        public ?int $numeroLocal = null,
         public ?string $observacao = null,
         public ?string $dataChegada = null,
         public ?string $dataChamada = null,
