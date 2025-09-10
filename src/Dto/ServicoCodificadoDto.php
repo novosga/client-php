@@ -14,16 +14,15 @@ declare(strict_types=1);
 namespace Novosga\Client\Dto;
 
 /**
- * ServicoDto
+ * ServicoCodificadoDto
  *
  * @author Rogerio Lino <rogeriolino@gmail.com>
  */
-class ServicoDto
+class ServicoCodificadoDto
 {
     public function __construct(
-        public ?int $id = null,
-        public ?string $nome = null,
-        public ?int $mestreId = null,
+        public ?ServicoDto $servico = null,
+        public ?int $peso = null,
     ) {
     }
 }

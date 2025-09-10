@@ -20,6 +20,7 @@ namespace Novosga\Client\Dto;
  */
 class AtendimentoDto
 {
+    /** @param ServicoCodificadoDto[] $codificados */
     public function __construct(
         public ?int $id = null,
         public ?SenhaDto $senha = null,
@@ -40,6 +41,7 @@ class AtendimentoDto
         public ?ClienteDto $cliente = null,
         public ?UsuarioDto $triagem = null,
         public ?UsuarioDto $usuario = null,
+        public ?array $codificados = [],
         public ?string $hash = null,
     ) {
     }
